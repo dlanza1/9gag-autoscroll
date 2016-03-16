@@ -86,7 +86,12 @@ function NineGagAutoScroller() {
     }
 
     function getVideoDuration(index){
-        return retrievePost(index)[0].getElementsByTagName("div")[0].getElementsByTagName("a")[0].getElementsByTagName("div")[0].getElementsByTagName("video")[0].duration;
+        duration = retrievePost(index)[0].getElementsByTagName("div")[0].getElementsByTagName("a")[0].getElementsByTagName("div")[0].getElementsByTagName("video")[0].duration;
+        if(!isNaN(duration)){
+            return duration;
+        }else{
+            return 10;   
+        }
     }
 
     function isLongPost(index){
