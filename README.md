@@ -1,4 +1,4 @@
-Open Java console in your browser and copy:
+Open Javascript console in your browser and copy the code below:
 
 ```
 s = document.createElement('script'); 
